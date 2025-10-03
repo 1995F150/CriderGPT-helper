@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="69">
+  <author>Jessie Crider</author>
+  <version>1.0.0.0</version>
+  <title>
+    <en>CriderGPT Helper</en>
+  </title>
+  <description>
+    <en>Replaces base AI with CriderGPT — complete with Auto-Drive, Auto-Feed (draft), and on-screen notifications.</en>
+  </description>
+  <iconFilename>icon.dds</iconFilename>
+  <multiplayer supported="true"/>
+  <extraSourceFiles>
+    <sourceFile filename="scripts/CriderGPTHelper.lua" />
+  </extraSourceFiles>
+</modDesc>
