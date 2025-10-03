@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="69">
-  <author>Jessie Crider</author>
-  <version>1.0.0.0</version>
-  <title>
-    <en>CriderGPT Helper</en>
-  </title>
-  <description>
-    <en>Replaces base AI with CriderGPT — complete with Auto-Drive, Auto-Feed (draft), and on-screen notifications.</en>
-  </description>
-  <iconFilename>icon.dds</iconFilename>
-  <multiplayer supported="true"/>
-  <extraSourceFiles>
-    <sourceFile filename="scripts/CriderGPTHelper.lua" />
-  </extraSourceFiles>
+<modDesc descVersion="66">
+    <author>Jessie Crider</author>
+    <version>1.1.0.0</version>
+    <title>
+        <en>CriderGPT Helper</en>
+    </title>
+    <description>
+        <en>
+            CriderGPT Helper is your AI farmhand for FS22.  
+            - Fuel monitoring (alerts at low levels)  
+            - Auto-feed system for animals (keeps barns stocked or alerts you)  
+            - Precision Farming support: pH & nitrogen recommendations with cost estimates  
+            - Basic auto-drive stub for future expansion  
+        </en>
+    </description>
+
+    <iconFilename>modIcon.dds</iconFilename>
+    
+    <extraSourceFiles>
+        <sourceFile filename="CriderGPTHelper.lua"/>
+    </extraSourceFiles>
+
+    <l10n filenamePrefix="modDesc_l10n"/>
+
+    <dependencies>
+        <!-- Precision Farming is optional; script checks if it's loaded -->
+    </dependencies>
 </modDesc>
+
