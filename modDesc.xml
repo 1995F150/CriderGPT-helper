@@ -2,18 +2,20 @@
 <modDesc descVersion="66">
     <author>Jessie Crider</author>
     <version>1.1.1.0</version>
+
     <title>
         <en>CriderGPT Helper</en>
     </title>
+
     <description>
         <en>
             CriderGPT Helper is your AI farmhand for Farming Simulator 22.
             This background script enhances gameplay with smart automation and alerts.  
-            
+
             Features:
             - Fuel monitoring with HUD alerts  
             - Auto-feed system for animals (keeps barns stocked or alerts you)  
-            - Precision Farming integration: pH & nitrogen recommendations with cost estimates  
+            - Precision Farming integration: pH &amp; nitrogen recommendations with cost estimates  
             - Custom AI worker text: "Hire CriderGPT" and "Dismiss CriderGPT"  
             - Fully console-compatible (no external scripts required)
         </en>
@@ -22,10 +24,10 @@
     <iconFilename>modIcon.dds</iconFilename>
 
     <extraSourceFiles>
-        <sourceFile filename="CriderGPTHelper.lua"/>
+        <sourceFile filename="CriderGPTHelper.lua" />
     </extraSourceFiles>
 
-    <l10n filenamePrefix="modDesc_l10n"/>
+    <l10n filenamePrefix="modDesc_l10n" />
 
     <dependencies>
         <!-- Precision Farming is optional; script checks if it's loaded -->
