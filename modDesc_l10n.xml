@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts language="en">
+        <text name="input_CRIDERGPT_HIRE">Hire CriderGPT</text>
+        <text name="input_CRIDERGPT_DISMISS">Dismiss CriderGPT</text>
+        <text name="info_CRIDERGPT_ACTIVE">CriderGPT is now active — your AI farmhand is working!</text>
+        <text name="info_CRIDERGPT_STOPPED">CriderGPT dismissed — taking a break at the farmhouse.</text>
+        <text name="info_CRIDERGPT_LOWFUEL">Fuel is running low!</text>
+        <text name="info_CRIDERGPT_FEEDING">Auto-feeding animals...</text>
+        <text name="info_CRIDERGPT_ALERT">CriderGPT: Attention required at one or more barns!</text>
+    </texts>
+
+    <texts language="de">
+        <text name="input_CRIDERGPT_HIRE">CriderGPT einstellen</text>
+        <text name="input_CRIDERGPT_DISMISS">CriderGPT entlassen</text>
+        <text name="info_CRIDERGPT_ACTIVE">CriderGPT ist jetzt aktiv — dein KI-Farmhelfer arbeitet!</text>
+        <text name="info_CRIDERGPT_STOPPED">CriderGPT wurde entlassen — macht Pause im Bauernhaus.</text>
+        <text name="info_CRIDERGPT_LOWFUEL">Kraftstoff wird knapp!</text>
+        <text name="info_CRIDERGPT_FEEDING">Automatische Tierfütterung...</text>
+        <text name="info_CRIDERGPT_ALERT">CriderGPT: Aufmerksamkeit bei einem oder mehreren Ställen erforderlich!</text>
+    </texts>
+
+    <texts language="fr">
+        <text name="input_CRIDERGPT_HIRE">Embaucher CriderGPT</text>
+        <text name="input_CRIDERGPT_DISMISS">Renvoyer CriderGPT</text>
+        <text name="info_CRIDERGPT_ACTIVE">CriderGPT est maintenant actif — votre assistant agricole IA travaille !</text>
+        <text name="info_CRIDERGPT_STOPPED">CriderGPT a été renvoyé — en pause à la ferme.</text>
+        <text name="info_CRIDERGPT_LOWFUEL">Le carburant est presque épuisé !</text>
+        <text name="info_CRIDERGPT_FEEDING">Alimentation automatique des animaux…</text>
+        <text name="info_CRIDERGPT_ALERT">CriderGPT : une attention est requise dans une ou plusieurs étables !</text>
+    </texts>
+
+    <texts language="es">
+        <text name="input_CRIDERGPT_HIRE">Contratar CriderGPT</text>
+        <text name="input_CRIDERGPT_DISMISS">Despedir CriderGPT</text>
+        <text name="info_CRIDERGPT_ACTIVE">CriderGPT está activo — ¡tu asistente agrícola con IA está trabajando!</text>
+        <text name="info_CRIDERGPT_STOPPED">CriderGPT fue despedido — descansando en la granja.</text>
+        <text name="info_CRIDERGPT_LOWFUEL">¡El combustible se está agotando!</text>
+        <text name="info_CRIDERGPT_FEEDING">Alimentación automática de animales…</text>
+        <text name="info_CRIDERGPT_ALERT">CriderGPT: ¡Se requiere atención en uno o más establos!</text>
+    </texts>
+</l10n>
