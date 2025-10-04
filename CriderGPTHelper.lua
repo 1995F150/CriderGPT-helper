@@ -1,6 +1,6 @@
--- CriderGPT Helper Mod (Upgraded)
+-- CriderGPT Helper Mod (Final Upgrade)
 -- Author: Jessie Crider
--- Version: 1.1.0.0
+-- Version: 1.1.1.0
 
 CriderGPTHelper = {}
 local CriderGPTHelper_mt = Class(CriderGPTHelper)
@@ -30,7 +30,6 @@ end
 -- Auto-Drive (stub)
 -- =========================
 function CriderGPTHelper:autoDriveTo(x, z)
-    -- Future hook: integrate Courseplay / AI Jobs here
     self:showNotification(string.format("Auto-driving to (%.1f, %.1f)…", x, z))
 end
 
@@ -100,7 +99,7 @@ function CriderGPTHelper:autoFeedScanOnce()
                     local pct = module:getFillLevelPercentage() * 100
                     if pct < 25 then
                         if module.addFood ~= nil then
-                            local added = module:addFood(1000) -- try to add 1000L
+                            local added = module:addFood(1000)
                             if added > 0 then
                                 self:showNotification(string.format(
                                     "Auto-fed %d L to %s (was below 25%%)",
@@ -137,6 +136,38 @@ function CriderGPTHelper:update(dt)
         self._autofeedTimer = 0
         self:autoFeedScanOnce()
     end
+end
+
+-- =========================
+-- Replace "Dismiss/Hire AI Worker" messages
+-- =========================
+local originalStopAIJob = AIVehicleUtil.stopCurrentAIJob
+local originalStartAIJob = AIVehicleUtil.startJob
+
+-- Override "Dismiss AI Worker" → "Dismiss CriderGPT"
+AIVehicleUtil.stopCurrentAIJob = function(vehicle, noEventSend)
+    if vehicle ~= nil then
+        g_currentMission:addExtraPrintText("CriderGPT: Worker dismissed.")
+    end
+    originalStopAIJob(vehicle, noEventSend)
+end
+
+-- Override "Hire AI Worker" → "Hire CriderGPT"
+AIVehicleUtil.startJob = function(vehicle, ...)
+    if vehicle ~= nil then
+        g_currentMission:addExtraPrintText("CriderGPT: Worker hired.")
+    end
+    originalStartAIJob(vehicle, ...)
+end
+
+-- Replace text in HUD messages dynamically
+local oldAddExtraPrintText = g_currentMission.addExtraPrintText
+g_currentMission.addExtraPrintText = function(self, text)
+    if text then
+        text = text:gsub("Dismiss AI Worker", "Dismiss CriderGPT")
+        text = text:gsub("Hire AI Worker", "Hire CriderGPT")
+    end
+    oldAddExtraPrintText(self, text)
 end
 
 addModEventListener(CriderGPTHelper:new())
