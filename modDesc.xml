@@ -5,6 +5,9 @@
 
     <title>
         <en>CriderGPT Helper</en>
+        <de>CriderGPT Helfer</de>
+        <fr>Assistant CriderGPT</fr>
+        <es>Asistente CriderGPT</es>
     </title>
 
     <description>
@@ -19,6 +22,42 @@
             - Custom AI worker text: "Hire CriderGPT" and "Dismiss CriderGPT"  
             - Fully console-compatible (no external scripts required)
         </en>
+
+        <de>
+            CriderGPT Helfer ist dein KI-Farmhelfer für Farming Simulator 22.
+            Dieses Skript verbessert das Gameplay mit intelligenter Automatisierung und Warnungen.  
+
+            Funktionen:
+            - Kraftstoffüberwachung mit HUD-Warnungen  
+            - Automatisches Füttern der Tiere (hält Ställe gefüllt oder warnt dich)  
+            - Precision Farming-Integration: pH- &amp; Stickstoffempfehlungen mit Kostenschätzungen  
+            - Benutzerdefinierte KI-Arbeitertexte: „CriderGPT einstellen“ und „CriderGPT entlassen“  
+            - Vollständig konsolenkompatibel (keine externen Skripte erforderlich)
+        </de>
+
+        <fr>
+            CriderGPT Helper est votre assistant agricole IA pour Farming Simulator 22.
+            Ce script en arrière-plan améliore le jeu avec une automatisation intelligente et des alertes.  
+
+            Caractéristiques :
+            - Surveillance du carburant avec alertes HUD  
+            - Système d’alimentation automatique des animaux (garde les étables remplies ou vous alerte)  
+            - Intégration Precision Farming : recommandations pH &amp; azote avec estimation des coûts  
+            - Texte personnalisé du travailleur IA : « Embaucher CriderGPT » et « Renvoyer CriderGPT »  
+            - Entièrement compatible avec les consoles (aucun script externe requis)
+        </fr>
+
+        <es>
+            CriderGPT Helper es tu asistente agrícola con IA para Farming Simulator 22.
+            Este script en segundo plano mejora el juego con automatización inteligente y alertas.  
+
+            Características:
+            - Monitoreo de combustible con alertas HUD  
+            - Sistema de alimentación automática para animales (mantiene los establos llenos o te alerta)  
+            - Integración de Precision Farming: recomendaciones de pH y nitrógeno con estimaciones de costos  
+            - Texto personalizado del trabajador IA: "Contratar CriderGPT" y "Despedir CriderGPT"  
+            - Totalmente compatible con consola (sin scripts externos)
+        </es>
     </description>
 
     <iconFilename>modIcon.dds</iconFilename>
